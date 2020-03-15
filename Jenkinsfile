@@ -28,11 +28,7 @@ pipeline {
                sh 'go build'              
            }    
        }
-       stage('Test') {
-           steps {                
-               //Tests will come here
-           }
-       }
+
        stage('Publish') {
            environment {
                registryCredential = 'amosdockerhub'
