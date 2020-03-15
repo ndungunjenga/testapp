@@ -4,7 +4,12 @@ pipeline {
        registry = "amosnjenga/testapp"
        GOCACHE = "/tmp"
    }
+
    stages {
+
+       stage{
+           checkout scm
+       }
        stage('Build') {
            agent {
                docker {
