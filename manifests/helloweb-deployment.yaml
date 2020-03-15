@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: amosnjenga/imtest:helloappv1
+        image: ""
         ports:
         - containerPort: 8080
