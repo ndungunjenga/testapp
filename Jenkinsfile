@@ -6,12 +6,6 @@ pipeline {
    }
 
    stages {
-
-       stage('Checkout Code') {
-           steps {
-                checkout scm
-           }
-       }
        stage('Build') {
            agent {
                docker {
