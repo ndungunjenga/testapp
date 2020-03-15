@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: ""
+        image: "{{ image_id }}"
         ports:
         - containerPort: 8080
